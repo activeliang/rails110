@@ -8,6 +8,7 @@
                 <td>#</td>
                 <td>Title</td>
                 <td>Description</td>
+                <td>Creator</td>
             </tr>
         </thead>
         <tbody>
@@ -16,9 +17,12 @@
                 <td>#</td>
                 <td><%= link_to(group.title, group_path(group))%></td>
                 <td><%= group.description %></td>
+                <td><%= group.user.email %></td>
+                <% if current_user && current_user == group.user %>
                 <td><%= link_to("Edit", edit_group_path(group), class: "btn btn-default")%>
                     <%= link_to("Delete", group_path(group), method: :delete,class: "btn btn-default",data: { confirm: "Are you sure?"})%>
                 </td>
+                <% end %>
             </tr>
             <% end %>
         </tbody>
