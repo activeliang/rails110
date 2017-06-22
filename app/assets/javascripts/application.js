@@ -15,4 +15,11 @@
 //= require turbolinks
 //= require bootstrap/alert
 //= require bootstrap/dropdown
+//= require simditor
+//= require marked
+//= require to-markdown
+//= require simditor-marked
+//= require simditor-markdown
+//= require simditor-mark
+//= require simditor-dropzone
 //= require_tree .

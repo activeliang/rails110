@@ -12,6 +12,12 @@
  *
  *= require_tree .
  *= require_self
+ *= require simditor
+ *= require simditor-markdown
  */
 @import "bootstrap";
 @import "bootstrap-sprockets";
+@import "froala_editor.min.css";
+@import "froala_style.min.css";
+@import "font-awesome-sprockets";
+@import "font-awesome";
